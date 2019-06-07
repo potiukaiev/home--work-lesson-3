@@ -1,0 +1,136 @@
+html * {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;	
+}
+
+.main{
+	font-family: Arial, serif, sans-Serif;
+}
+
+.inner-wrapper{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*TRANSPERENT LETTERS SECTION*/
+.transperent-letters{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-around;
+	background-color: #000;
+}
+
+.bg-holder:hover span{
+	transition: .5s;
+	background: black url("img/space-background.jpg") no-repeat center;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.transperent{
+	background: black url("img/space-background.jpg") no-repeat center;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;	    
+}
+
+.transperent span{
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+.transperent:hover span{
+	transition: .5s;
+	background: black url("img/space-background.jpg") no-repeat center;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*CUBES SECTION*/
+.cubes{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-around;
+}
+.cubes .inner-wrapper > :first-child{
+	padding-bottom: 50px;
+	color: gray;
+}
+
+.cubes .inner-wrapper > :last-child{
+	padding-top: 50px;
+	color: gray;
+}
+
+.cubes-wrapper{
+	position: relative;
+	height: 360px;
+	padding: 10px;
+	margin-left: 10%;
+}
+
+.cube{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #DCDCDC;
+	border: 1px solid black;
+	box-shadow: 5px 5px 5px #666;
+	padding: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.cube p{
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.cube:hover{
+	width: 200px;
+	height: 200px;
+	z-index: 5;	
+}
+
+.cube:hover:after{
+	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus expedita sapiente vero libero itaque ipsam perspiciatis voluptatem cupiditate fugiat dolorem esse facere laudantium reprehenderit animi, rerum quos, illo voluptas.";
+	width: 100%;
+	overflow: hidden;
+	color: black;
+	font-size: 14px;
+}
+
+.cube:hover p{
+	display: none;
+}
+
+.cross{
+	top: 0;
+	left: 0;
+	color: #ffd700;
+}
+
+.biohazard{
+	top: 50px;
+	left: 50px;
+	z-index: 2;
+	color: #00FF00;
+}
+
+.radiation{
+	top: 100px;
+	left: 100px;
+	z-index: 3;
+	color: #de2700;
+}
+
+.skull{
+	top: 150px;
+	left: 150px;
+	z-index: 4;
+	color: black;
+}
