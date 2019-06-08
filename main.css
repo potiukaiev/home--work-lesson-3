@@ -1,7 +1,7 @@
 html * {
 	box-sizing: border-box;
-	margin: 0px;
-	padding: 0px;	
+	margin: 0;
+	padding: 0;
 }
 
 .main{
@@ -14,39 +14,67 @@ html * {
 	padding: 10px;
 }
 
+
+/*REQUIRED TASK SECTION*/
+.required-task{
+	height: 100vh;
+	padding-top: 5%;
+}
+.img-wrapper{
+	display: flex;
+	align-items: center;
+}
+
+.required-task p{
+	padding-top: 25px;
+	line-height: 1.5em;
+}
+
+.required-task p sub{
+	color: blue;
+}
+.first-img{
+	margin-right: 50px;
+}
+.second-img{
+	margin-right: 20px;
+}
+
+.green-color{
+	color: green;
+}
+.required-task i{
+	color:blue;
+	margin-right: 10px;
+}
+
 /*TRANSPERENT LETTERS SECTION*/
 .transperent-letters{
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: space-around;
 	background-color: #000;
-}
-
-.bg-holder:hover span{
-	transition: .5s;
-	background: black url("img/space-background.jpg") no-repeat center;
-	-webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 .transperent{
 	background: black url("img/space-background.jpg") no-repeat center;
 	-webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;	    
+    -webkit-background-clip: text;
+	transition: .3s;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.transperent:hover{
+	background-size: 150%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 }
 
 .transperent span{
     font-size: 150px;
     font-weight: bolder;
-}
-
-.transperent:hover span{
-	transition: .5s;
-	background: black url("img/space-background.jpg") no-repeat center;
-	-webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 /*CUBES SECTION*/
@@ -55,7 +83,7 @@ html * {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: space-around;
+	align-items: center;
 }
 .cubes .inner-wrapper > :first-child{
 	padding-bottom: 50px;
@@ -134,3 +162,5 @@ html * {
 	z-index: 4;
 	color: black;
 }
+
+
